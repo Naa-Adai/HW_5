@@ -1,0 +1,59 @@
+<!--
+File: index.html
+GUI Assignment: Scrabble Game
+Mildred Kumah, UMass Lowell Computer Science, mildred_kumah@student.uml.edu
+Copyright (c) 2023 by Mildred All rights reserved. May be freely copied or
+excerpted for educational purposes with credit to the author.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>SCRABBLE</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+</head>
+<body>
+	<div class="first">
+		<h2>SCRABBLE!!!</h2>
+		<div id="score-container" class="score-container">
+			<div class="nav">Score:</div>
+			<div id="current-score">0</div>
+			<div class="nav">Word:	</div>
+			<div id="word"></div>
+		</div>
+		<div id="board" style="background-image: url('graphics_data/Scrabble_Board_OneLine.png');">
+			<div class="board-row">
+				<div class="board-space" data-bonus="1"></div>
+				<div class="board-space" data-bonus="1"></div>
+				<div class="board-space" data-bonus="3"></div>
+				<div class="board-space" data-bonus="1"></div>
+				<div class="board-space" data-bonus="1"></div>
+				<div class="board-space" data-bonus="1"></div>
+				<div class="board-space" data-bonus="2"></div>
+				<div class="board-space" data-bonus="1"></div>
+				<div class="board-space" data-bonus="2"></div>
+				<div class="board-space" data-bonus="1"></div>
+				<div class="board-space" data-bonus="1"></div>
+				<div class="board-space" data-bonus="1"></div>
+				<div class="board-space" data-bonus="3"></div>
+				<div class="board-space" data-bonus="1"></div>
+				<div class="board-space" data-bonus="1"></div>
+			</div>
+		</div>
+		<div id="rack" class="rack-container" style="background-image: url('graphics_data/scrabble-tile-holder-406774_640.png');">
+		</div>
+		<button id="next" onclick="next()">Next</button>
+		<button id="clear" onclick="clearGame()">Clear</button>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+	<script src="js/script.js"></script>
+	<script>$(document).ready(function () {
+			resetPieceLetter();
+			getTile();
+			dragAndDrop();
+		});</script>
+</body>
+</html>

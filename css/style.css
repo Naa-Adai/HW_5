@@ -1,0 +1,104 @@
+/*
+File: style.css
+GUI Assignment: Scrabble Game
+Mildred Kumah, UMass Lowell Computer Science, mildred_kumah@student.uml.edu
+Copyright (c) 2023 by Mildred All rights reserved. May be freely copied or
+excerpted for educational purposes with credit to the author.
+*/
+
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.first {
+	min-height: 100em;
+	width: 100%;
+	background-image: linear-gradient(#000080, black);
+	background-position: center;
+	background-size: 200px;
+	position: relative;
+	overflow: auto;
+}
+
+.first h2 {
+	color: #fff;
+	text-decoration: none;
+	font-size: 60px;
+	padding: 2% 35%;
+	position: relative;
+	text-align: center;
+	text-shadow: 5px 3px 10px #00FFFF;
+}
+
+#score-container {
+	color: #00FFFF;
+	width: 80%; 
+	margin: 0 auto 4% auto;
+	font-size: 1.3em;
+	text-shadow: 2px 2px 5px #fff;
+	text-align: center; 
+}
+
+#score-container div {
+	margin: 30px auto 10px auto;
+}
+
+#score-container > div > div:nth-child(2) {
+	width: 72px;
+	font-weight: bold;
+}
+
+#board {
+	margin: 0 auto 45px auto;
+	background-size: cover; 
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#rack {
+	margin-top: 0;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+#rack img{
+	width: 50px; 
+	height: 50px; 
+	margin: 0; 
+}
+
+button {
+	font-size: 1.5em; 
+	margin: 3% auto; 
+	display: block; 
+	box-shadow: 2px 2px 15px #00FFFF;
+}
+
+
+
+.rack-container {
+	display: flex;
+	background-size: cover; 
+	background-position: center;
+	justify-content: space-around;
+	margin-top: 20px;
+	background-repeat: no-repeat;
+}
+
+.board-row {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 20px;
+}
+
+.board-space {
+	width: 50px;
+	height: 50px;
+	border: 1px solid #000;
+	text-align: center;
+	line-height: 50px;
+	cursor: pointer;
+	position: relative;
+}

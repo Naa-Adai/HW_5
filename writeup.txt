@@ -1,0 +1,10 @@
+Implemented Features
+
+1. Board is droppable
+2. Board recognized double word and double letter bonuses
+3. Words dropped into the board are recognized and displayed in program
+4. Score is calculated accurately when next is clicked
+5. Player can keep playing until the choose to restart game or pieces run out
+6. The tiles can be returned to rack. 
+7. Board is cleared when next or clear is clicked.
+8. If tile is placed at an invalid position, it returns to its previous position before it was moved.
